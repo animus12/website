@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Questrial',	sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	width: 100%;
+	padding: 0px 20px;
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+ .fa-reorder{
+	color: white;
+	font-size: 30px;
+	display: none;
+}
+
+
+.nav-item li{
+	display: inline;
+	list-style: none;
+	margin-left: 30px;
+}
+.nav-item li:hover{
+	transition: 200ms ease-in-out;
+	border-bottom: 3px solid blueviolet;
+}
+.nav-item li a{
+	text-decoration: none;
+	color: rgb(206, 206, 206);
+	font-weight: bold;
+}
+
+header{
+	position: relative;
+	position: fixed;
+	top: 0;
+	z-index: 22;
+	width: 100%;
+	display: block;
+	transition: top 0.3s;
+	padding: 14px 0px;
+	background-color: #212529;
+}
+.navbar h2{
+	color: white;
+}
+
+.navbar{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.herobox1, .herobox2{
+	width: 100%;
+}
+
+.herobox2{
+	display: flex;
+	flex-direction: row;
+	align-content: end;
+	padding-left: 40px;
+}
+.content1{
+	background-position: center;
+	background-size: cover;
+	/* background-image: url('./harhar.svg'); */
+}
+.content2{
+	background-position: center top;
+	background-size: cover;
+	background-image: url('./hehe.svg');
+}
+.herobox2 .content1{
+	width: 100%;
+	height: 320px;
+	border-radius: 7px;
+	padding: 7px;
+}
+.herobox2 .content2{
+	transform: translate(-40px, 90px);
+	width: 100%;
+	height: 300px;
+	padding: 7px;
+	border-radius: 7px;
+}
+.herobox2 .content1:hover {
+	box-shadow: 0px 6px 10px 0px gray;
+	transition: 0.3s;
+	z-index: 2;
+}
+
+.herobox1{
+	padding: 2rem;
+}
+.herobox1 h1 a{
+	color: black;
+	text-decoration: none;
+}
+
+.hero{
+	margin-top: 200px;
+}
+
+.herocontent{
+	font-size: xx-large;
+	display: flex;
+}
+.quotecontent{
+	margin-top:30px;
+}
+
+.mobile-nav{
+	background-color: ;
+	position: absolute;
+	bottom: -12px;
+}
+
+.items{
+	margin: 200px;
+}
+.qoutes::before{
+	content:"“";
+	font-size: 50px;
+	color: blueviolet;
+}
+.qoutes::after{
+	content:"“";
+	font-size: 50px;
+	color: blueviolet;
+}
+
+#logo{
+	animation: logo 1s ease-in-out infinite alternate;
+	transform-origin: center;
+	transform-box: fill-box;
+}
+
+@keyframes logo{
+	from{
+		transform: translateY(-20px);
+	} 
+	to{
+			transform: translateY(29px);
+	}
+}
+
+
+
+/* Skills */
+.skills{
+	margin-top: 300px;
+	clip-path: polygon(0 0, 100% 6%, 100% 100%, 0 95%);
+	background-color: #b9c3c43e;
+	height: 700px;
+}
+.skillscontent h1 {
+	padding-top: 3rem;
+	color: black;
+	font-size:40px;
+	width:fit-content;
+	border-bottom: 5px solid blueviolet;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	margin: 60px 0px;
+	gap: 15px;
+}
+
+.grid-item {
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 20px;
+	font-size: 30px;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.grid-item img{
+	height: 80px;
+}
+
+@media (max-width: 600px) {
+	.nav-item{
+		display: none;
+	}
+
+	.fa-reorder {
+		color: white;
+		font-size: 30px;
+		display: flex;
+	}
+
+	.herocontent{
+		flex-direction: column;
+	}
+	.herobox1 {
+		text-align: center;
+		padding: 2rem 0px;
+	}
+	.herobox2 .content2 {
+	
+		height: 200px;
+	}
+	.herobox2 .content1 {
+		height: 200px;
+	}
+	.qoutes{
+		text-align:center;
+	}
+	.grid-container {
+		display: grid;
+		grid-template-columns: auto;
+		margin: 60px 0px;
+		gap: 15px;
+	}
+	.skills {
+	
+		height: 1500px;
+	}
+	
+}
+@media (max-width: 823px) {
+	.herobox1 {
+		padding: 2rem 0px;
+	}
+}
