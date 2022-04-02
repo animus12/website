@@ -1,3 +1,16 @@
+
+ScrollReveal({
+	reset: true,
+	distance: '30px',
+	duration: 2500,
+	delay: 400
+});
+
+ScrollReveal().reveal('.qoutes, .skillTitle', { delay: 100, origin: 'left' });
+ScrollReveal().reveal('.grid-item, .content2 ', { delay: 100, origin: 'bottom' });
+ScrollReveal().reveal('.content1', { delay: 100, origin: 'top' });
+
+
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
 	var currentScrollPos = window.pageYOffset;
