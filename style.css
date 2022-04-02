@@ -110,7 +110,7 @@ header{
 }
 
 .hero{
-	margin-top: 200px;
+	margin-top: 180px;
 }
 
 .herocontent{
@@ -172,18 +172,11 @@ header{
 	width:fit-content;
 	border-bottom: 5px solid blueviolet;
 }
-.projectcontent h1 {
-	padding-top: 3rem;
-	color: black;
-	font-size:35px;
-	width:fit-content;
-	border-bottom: 5px solid blueviolet;
-}
 
 .grid-container {
 	display: grid;
 	grid-template-columns: auto auto auto;
-	margin: 60px 0px;
+	margin: 50px 0px;
 	gap: 15px;
 }
 
@@ -201,6 +194,13 @@ header{
 
 .grid-item img{
 	height: 80px;
+}
+.projectcontent h1 {
+	padding-top: 3rem;
+	color: black;
+	font-size: 35px;
+	width: fit-content;
+	border-bottom: 5px solid blueviolet;
 }
 
 
@@ -241,7 +241,7 @@ header{
 	}
 	.skills {
 	
-		height: 1500px;
+		height: 1400px;
 	}
 	
 }
