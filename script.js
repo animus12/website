@@ -6,7 +6,7 @@ ScrollReveal({
 	delay: 400
 });
 
-ScrollReveal().reveal('.qoutes, .skillTitle', { delay: 100, origin: 'left' });
+ScrollReveal().reveal('.qoutes, .skillTitle', { delay: 200, origin: 'left' });
 ScrollReveal().reveal('.grid-item, .content2 ', { delay: 100, origin: 'bottom' });
 ScrollReveal().reveal('.content1', { delay: 100, origin: 'top' });
 
