@@ -87,12 +87,6 @@ header{
 	height: 320px;
 	border-radius: 7px;
 	padding: 7px;
-	transition: all 200ms ease;
-}
-
-.herobox2 .content1:hover {
-	box-shadow: 0px 3px 9px 0px gray;
-	z-index: 2;
 }
 
 .herobox2 .content2{
