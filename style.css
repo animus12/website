@@ -87,18 +87,21 @@ header{
 	height: 320px;
 	border-radius: 7px;
 	padding: 7px;
+	transition: all 200ms ease;
 }
+
+.herobox2 .content1:hover {
+	transform: scale(2.3);
+	box-shadow: 0px 3px 9px 0px gray;
+	z-index: 2;
+}
+
 .herobox2 .content2{
 	transform: translate(-40px, 90px);
 	width: 100%;
 	height: 300px;
 	padding: 7px;
 	border-radius: 7px;
-}
-.herobox2 .content1:hover {
-	box-shadow: 0px 6px 10px 0px gray;
-	transition: 0.3s;
-	z-index: 2;
 }
 
 .herobox1{
@@ -166,7 +169,7 @@ header{
 	height: 700px;
 }
 .skillscontent h1 {
-	padding-top: 3rem;
+	padding-top: 5rem;
 	color: black;
 	font-size:35px;
 	width:fit-content;
@@ -186,10 +189,12 @@ header{
 	font-size: 30px;
 	border-radius: 5px;
 	text-align: center;
+	transition: box-shadow 200ms ease;
 }
-.skillscontent .grid-container  .grid-item:hover {
-		box-shadow: 0px 2px 19px 0px rgb(169, 169, 169);
-		transition: 200ms ease-in;
+.grid-container .grid-item:hover {
+	transform: scale(2.5);
+	color: red;
+	box-shadow: 0px 2px 19px 0px rgb(169, 169, 169);
 }
 
 .grid-item img{
